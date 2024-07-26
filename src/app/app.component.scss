@@ -3,9 +3,13 @@
 }
 .main-body{
     margin: 0 auto;
-    max-width:1248px;
+    max-width:1300px;
     padding-top:20px;
     mat-form-field{
         width:100%;
     }
+}
+.action-body{
+    display: flex;
+    flex-direction: column;
 }

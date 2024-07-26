@@ -17,4 +17,8 @@ export class EmployeeService {
    getEmployeeList():Observable<any>{
     return this._http.get('http://localhost:3000/employee')
    }
+
+   deleteEmployee(id:string):Observable<any>{
+    return this._http.delete(`http://localhost:3000/employee/${id}`) 
+   }
 }

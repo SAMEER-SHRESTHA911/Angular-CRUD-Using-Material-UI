@@ -28,6 +28,7 @@ export class AppComponent implements OnInit{
     'company', 
     'experience',
     'package', 
+    'actions'
   ];
   dataSource!: MatTableDataSource<any>;
 
@@ -44,7 +45,12 @@ export class AppComponent implements OnInit{
   }
  
   addEditFunction():void{
-    this._dialog.open(EmpAddEditComponent)
+    const dialogRef = this._dialog.open(EmpAddEditComponent);
+    dialogRef.afterClosed().subscribe({
+      next:(res)=>{
+        if(res) this.getEmployeeList();
+      }
+    })
   }
 
   getEmployeeList(){
@@ -66,5 +72,15 @@ export class AppComponent implements OnInit{
     if (this.dataSource.paginator) {
       this.dataSource.paginator.firstPage();
     }
+  }
+  deleteEmployee(id:string){
+    this._empService.deleteEmployee(id).subscribe({
+      next: (res)=>{
+        console.log(res);
+        alert("Employee Deleted");
+        this.getEmployeeList();
+      },
+      error: console.log
+    })
   }
 }

@@ -13,18 +13,6 @@
       "package": 1561691
     },
     {
-      "id": "6a6e",
-      "firstName": "Test",
-      "lastName": "Test",
-      "email": "test@gmail.com",
-      "dob": "2024-07-08T18:15:00.000Z",
-      "gender": "male",
-      "education": "PostGraduate",
-      "company": "Test",
-      "experience": 1,
-      "package": 50505505050
-    },
-    {
       "id": "582a",
       "firstName": "Aaditya",
       "lastName": "Jha",
@@ -35,6 +23,30 @@
       "company": "TechnoFex",
       "experience": 1,
       "package": 5000
+    },
+    {
+      "id": "dc98",
+      "firstName": "Siddhartha",
+      "lastName": "Shakya",
+      "email": "sid123@gmail.com",
+      "dob": "2024-07-02T18:15:00.000Z",
+      "gender": "male",
+      "education": "Intermediate",
+      "company": "sad",
+      "experience": 1,
+      "package": 65416161
+    },
+    {
+      "id": "726b",
+      "firstName": "Abisha",
+      "lastName": "Sharma",
+      "email": "sadasd@gmail.com",
+      "dob": "2024-07-15T18:15:00.000Z",
+      "gender": "female",
+      "education": "Intermediate",
+      "company": "ssadasfasdf",
+      "experience": 5,
+      "package": 8741651
     }
   ]
 }
