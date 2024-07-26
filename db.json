@@ -13,7 +13,6 @@
       "package": 1561691
     },
     {
-      "id": "582a",
       "firstName": "Aaditya",
       "lastName": "Jha",
       "email": "aditya@gmail.com",
@@ -22,7 +21,8 @@
       "education": "Intermediate",
       "company": "TechnoFex",
       "experience": 1,
-      "package": 5000
+      "package": 500000,
+      "id": "582a"
     },
     {
       "id": "dc98",
