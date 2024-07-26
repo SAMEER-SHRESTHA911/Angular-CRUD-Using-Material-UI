@@ -1,0 +1,63 @@
+<div mat-dialog-title class="formTitle">Employee Form</div>
+<div mat-dialog-content class="content">
+    <div class="row">
+        <mat-form-field appearance="outline">
+            <mat-label>First Name </mat-label>
+            <input matInput type="text" placeholder="First Name">
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Last Name</mat-label>
+            <input matInput type="text" placeholder="Last Name">
+        </mat-form-field>
+    </div>
+    <div class="row">
+        <mat-form-field appearance="outline">
+            <mat-label>Email </mat-label>
+            <input matInput type="text" placeholder="abc@gmail.com">
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Date of Birth</mat-label>
+            <input matInput [matDatepicker]="picker">
+            <mat-hint>MM/DD/YYYY</mat-hint>
+            <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+    </div>
+    <div class="row">
+        <mat-radio-group aria-label="Select an option">
+            <mat-label>Select your gender</mat-label>
+            <mat-radio-button value="male">Male</mat-radio-button>
+            <mat-radio-button value="female">Female</mat-radio-button>
+          </mat-radio-group>
+          
+    </div>
+    <div class="row">
+        <mat-form-field appearance="outline">
+            <mat-label>Education level</mat-label>
+            <mat-select>
+              @for (education of educations;track education){
+                <mat-option [value]="education">{{education}}</mat-option>
+              }
+            </mat-select>
+          </mat-form-field>
+          <mat-form-field appearance="outline">
+            <mat-label>Company Name</mat-label>
+            <input matInput type="text" placeholder="Company name">
+        </mat-form-field>
+    </div>
+    <div class="row">
+        <mat-form-field appearance="outline">
+            <mat-label>Experience</mat-label>
+            <input matInput type = "number" placeholder ="Experience in years">
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Package</mat-label>
+            <input matInput type="number" placeholder="10000000">
+            <mat-hint>In rupees</mat-hint>
+        </mat-form-field>
+    </div>
+</div>
+<div mat-dialog-actions class="action">
+    <button mat-raised-button color="primary">Save</button>
+    <button mat-raised-button>Close</button>
+</div>
